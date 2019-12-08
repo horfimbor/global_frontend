@@ -1,2 +1,2 @@
 build:
-	docker build -t horfimbor/global-frontend:dev .
+	docker build -t horfimbor/global_frontend:dev .
