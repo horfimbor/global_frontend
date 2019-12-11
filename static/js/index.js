@@ -1,5 +1,4 @@
 
-document.addEventListener('login', function (e) {
-    console.log("ok ok")
+document.addEventListener('auth-jwt', function (e) {
     console.log(e.detail)
 }, false);
