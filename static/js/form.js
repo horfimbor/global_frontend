@@ -14,13 +14,13 @@ class Form extends HTMLElement {
             }
 
             ::slotted(input:invalid) {
-              border: 2px dashed red;
-              background-color: red;
+              border: 2px solid red;
+              background-color: #f16f82;
             }
 
             ::slotted(input:valid) {
               border: 1px solid black;
-              background-color: blue;
+              background-color: #6facf1;
             }
         </style>
         <fieldset>

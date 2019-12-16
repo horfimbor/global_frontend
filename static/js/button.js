@@ -3,16 +3,28 @@ class Button extends HTMLElement {
         super();
 
         let content = this.getAttribute('content')
+        let purpose = this.getAttribute('purpose')
+
+        let halo = "#06c62c"
+        let border = "green"
+
+        if (purpose == "good"){
+            halo = "#4b51fa"
+            border = "blue"
+        }else if (purpose == "bad") {
+            halo = "#cd0000"
+            border = "red"
+        }
 
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
         <style>
             button {
-                box-shadow: 0px 0px 5px 2px #c9127a;
+                box-shadow: 0px 0px 5px 2px ${halo};
                 background-color:transparent;
                 border-top-left-radius:10px;
                 border-bottom-right-radius:10px;
-                border:1px solid #de1111;
+                border:1px solid ${border};
                 display:inline-block;
                 cursor:pointer;
                 color:#d4cce3;
